@@ -11,17 +11,15 @@
 3. Give permission:
 ~~~~
   cd ~/catkin_ws/src/nmea_gps_driver/scripts'
-
   sudo chmod +x nmea_gps_driver.py
-
   sudo chmod +777 /dev/ttyUSB0
 ~~~~
 4. Run node:
-
+~~~~
   roscore
-  
   rosrun nmea_gps_driver nmea_gps_driver.py _port:=/dev/ttyUSB0 _baud:=115200
-
+~~~~
 5. Visualization:
-
+~~~~
   roslaunch rviz_satellite demo.launch
+~~~~
