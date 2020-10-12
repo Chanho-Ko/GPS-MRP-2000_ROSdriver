@@ -6,11 +6,11 @@
 2. Check that all of LEDs are properly turned on (red LED is blinking)
 
 ## Ros Setting
-1. Copy all of folders to ~/catkin_ws/src
+1. Clone this git to your catkin workspace(e.g, ~/catkin_ws/src)
 2. Build with $catkin_make
 3. Give permission:
 ~~~~
-  cd ~/catkin_ws/src/nmea_gps_driver/scripts'
+  cd ~/catkin_ws/src/nmea_gps_driver/scripts
   sudo chmod +x nmea_gps_driver.py
   sudo chmod +777 /dev/ttyUSB0
 ~~~~
