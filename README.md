@@ -10,7 +10,7 @@
 2. Build with $catkin_make
 3. Give permission:
 
-  cd ~/catkin_ws/src/nmea_gps_driver/scripts
+  'cd ~/catkin_ws/src/nmea_gps_driver/scripts'
 
   sudo chmod +x nmea_gps_driver.py
 
