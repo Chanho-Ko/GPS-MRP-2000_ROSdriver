@@ -9,13 +9,13 @@
 1. Copy all of folders to ~/catkin_ws/src
 2. Build with $catkin_make
 3. Give permission:
-
-  'cd ~/catkin_ws/src/nmea_gps_driver/scripts'
+~~~~
+  cd ~/catkin_ws/src/nmea_gps_driver/scripts'
 
   sudo chmod +x nmea_gps_driver.py
 
   sudo chmod +777 /dev/ttyUSB0
-
+~~~~
 4. Run node:
 
   roscore
