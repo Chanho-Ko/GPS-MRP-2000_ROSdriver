@@ -15,7 +15,7 @@ The script is based on the Python 2.7, Ubuntu 18.08, and ROS melodic.
 ~~~~
   cd ~/catkin_ws/src/nmea_gps_driver/scripts
   sudo chmod +x nmea_gps_driver.py
-  sudo chmod +777 /dev/ttyUSB0
+  sudo chmod +x /dev/ttyUSB0
 ~~~~
 4. Run node:
 ~~~~
