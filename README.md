@@ -1,4 +1,7 @@
 # MRP-2000_rtk_gps_driver
+This driver is for the MRP-2000 (zed-f9p based RTK-GPS module).
+By default, topic message for the global postion (/fix) is published with frequency of 8Hz.
+The script is based on the Python 2.7, Ubuntu 18.08, and ROS melodic.
 
 ## Hardware Setting
 1. Give power MRP-2000 with micro-5pin
