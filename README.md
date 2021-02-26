@@ -10,19 +10,26 @@ The script is based on the Python 2.7, Ubuntu 18.04, and ROS melodic.
 
 ## Ros Setting
 1. Clone this git to your catkin workspace(e.g, ~/catkin_ws/src)
+~~~~
+  git clone https://github.com/Chanho-Ko/GPS-MRP-2000_ROSdriver.git
+~~~~
 2. Build with $catkin_make
-3. Give permission:
+3. Find port number:
+~~~~
+  ls -l /dev/ttyUSB*
+~~~~
+4. Give permission:
 ~~~~
   cd ~/catkin_ws/src/nmea_gps_driver/scripts
   sudo chmod +x nmea_gps_driver.py
-  sudo chmod +x /dev/ttyUSB0
+  sudo chmod +777 /dev/ttyUSB0
 ~~~~
-4. Run node:
+5. Run node:
 ~~~~
   roscore
   rosrun nmea_gps_driver nmea_gps_driver.py _port:=/dev/ttyUSB0 _baud:=115200
 ~~~~
-5. Visualization:
+6. Visualization:
 ~~~~
   roslaunch rviz_satellite demo.launch
 ~~~~
